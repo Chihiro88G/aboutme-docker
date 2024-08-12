@@ -1,11 +1,10 @@
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { Box } from "@mui/material";
 
-// import Logo from "../components/Logo";
 import { getPages } from "../utils/getPages";
+import Logo from "../components/Logo";
 import NavContainer from "../components/NavContainer";
 import PageButton from "./PageButton";
 
@@ -22,7 +21,7 @@ export default function Footer() {
         }}
         >
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          {/* <Logo /> */}
+          <Logo />
         </Box>
         <Box sx={{ display: 'flex' }}>
           {getPages().map((page) => (
@@ -34,9 +33,8 @@ export default function Footer() {
         ))}
         </Box>
         <Box sx={{ textAlign: "center" }}>
-          <BottomNavigationAction label="Twitter" icon={<TwitterIcon />} />
-          <BottomNavigationAction label="Instagram" icon={<InstagramIcon />} />
-          <BottomNavigationAction label="Facebook" icon={<FacebookIcon />} />
+          <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/in/chihiro-h/" target="_blank" />
+          <BottomNavigationAction label="Github" icon={<GitHubIcon />} href="https://github.com/Chihiro88G" target="_blank" />
         </Box>
       </Box>
     </NavContainer>
