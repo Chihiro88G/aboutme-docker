@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Box, CssBaseline, createTheme, ThemeProvider, useMediaQuery } from "@mui/material";
 import TopNavBar from "./TopNavBar";
 import Footer from "./Footer";
-// import MobileNavBar from "./MobileNavBar";
+import MobileNavBar from "./MobileNavBar";
 
 export default function Layout() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -22,8 +22,7 @@ export default function Layout() {
     <Box>
       <CssBaseline />
       <ThemeProvider theme={darkTheme}>
-        {/* {isDesktop ? <TopNavBar /> : <MobileNavBar />} */}
-        <TopNavBar />
+        {isDesktop ? <TopNavBar /> : <MobileNavBar />}
       </ThemeProvider>
       <Box
         component="main"
