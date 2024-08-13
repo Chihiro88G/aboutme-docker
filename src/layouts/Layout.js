@@ -27,7 +27,7 @@ export default function Layout() {
       <Box
         component="main"
         sx={{
-          minHeight: '100vh',
+          minHeight: '80vh',
           overflow: 'auto',
         }}
       >

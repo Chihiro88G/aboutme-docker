@@ -22,7 +22,7 @@ export default function Logo() {
           textDecoration: 'none',
         }}
       >
-        Chihiro
+        Chihiro.ca
       </Typography>
     </Fragment>
   );
