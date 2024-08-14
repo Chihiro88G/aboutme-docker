@@ -1,6 +1,7 @@
 {
   "name": "aboutme",
   "version": "0.1.0",
+  "homepage": "https://chihiro88g.github.io/aboutme/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
