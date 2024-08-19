@@ -7,6 +7,7 @@ import Avatar from '@mui/material/Avatar';
 
 import background from "../images/Gradient-Background.png"
 import myImg from "../images/me.png"
+import Typewriter from '../hooks/useTypewriter';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -21,7 +22,7 @@ export default function Home() {
     >
       <Box
         sx={{
-          display: 'flex',
+          display: 'block',
           height: '80vh',
           margin: '0 auto',
           padding: isDesktop ? '50px' : '40px',
@@ -29,37 +30,55 @@ export default function Home() {
         }} 
         maxWidth="lg"
       >
-        <Box>
-          <Typography
-            variant={isDesktop ? 'h3' : 'h5'}
-            sx={{ marginTop: '60px', marginBottom: '10px' }}
-          >
-            Chihiro Hasegawa
-          </Typography>
-          <Typography
-            variant={isDesktop ? 'h4' : 'h6'}
-          >
-            <LaptopMacIcon />Full Stack Developer
-          </Typography>
-          <Typography
-            variant={isDesktop ? 'h4' : 'h6'}
-          >
-            <LocationOnIcon />Toronto, Canada
-          </Typography>
-          <Button variant='contained' sx={{ marginTop: '60px', marginRight: '10px' }} href="https://www.linkedin.com/in/chihiro-h/" target="_blank" ><LinkedInIcon />CONNECT</Button>
-          <Button variant='contained' sx={{ marginTop: '60px' }} color='success' download='ChihiroH_Resume.pdf' href='ChihiroH_Resume.pdf'><PictureAsPdfIcon />RESUME</Button>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-evenly'
+          }} 
+        >
+          <Box>
+            <Typography
+              variant={isDesktop ? 'h3' : 'h5'}
+              sx={{ marginTop: '60px', marginBottom: '10px' }}
+            >
+              Chihiro Hasegawa
+            </Typography>
+            <Typography
+              variant={isDesktop ? 'h4' : 'h6'}
+            >
+              <LaptopMacIcon />Full Stack Developer
+            </Typography>
+            <Typography
+              variant={isDesktop ? 'h4' : 'h6'}
+            >
+              <LocationOnIcon />Toronto, Canada
+            </Typography>
+            <Button variant='contained' sx={{ marginTop: '60px', marginRight: '10px' }} href="https://www.linkedin.com/in/chihiro-h/" target="_blank" ><LinkedInIcon />CONNECT</Button>
+            <Button variant='contained' sx={{ marginTop: '60px' }} color='success' download='ChihiroH_Resume.pdf' href='ChihiroH_Resume.pdf'><PictureAsPdfIcon />RESUME</Button>
+          </Box>
+
+          <Avatar
+            alt="Remy Sharp"
+            src={myImg}
+            sx={{ 
+              width: 250,
+              height: 250,
+              marginTop: '60px'
+            }}
+          />
         </Box>
 
-        <Avatar
-          alt="Remy Sharp"
-          src={myImg}
-          sx={{ 
-            width: 250,
-            height: 250,
+        <Box
+          sx={{
+            margin: '0 auto',
+            display: 'block',
             marginTop: '60px'
           }}
-        />
+        >
+          <Typewriter text= " Let's Connect! " />
+        </Box>
       </Box>
+
     </Box>
   )
 }
