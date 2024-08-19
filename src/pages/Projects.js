@@ -17,7 +17,7 @@ export default function Projects() {
       <Box
         sx={{
           display: 'block',
-          height: '80vh',
+          height: '100vh',
           margin: '0 auto',
           padding: isDesktop ? '50px' : '40px',
         }} 

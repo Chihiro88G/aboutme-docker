@@ -16,7 +16,7 @@ export default function Skills() {
       <Box
         sx={{
           display: 'block',
-          height: '100%',
+          height: '100vh',
           margin: '0 auto',
           padding: isDesktop ? '50px' : '40px',
         }} 
@@ -69,26 +69,6 @@ export default function Skills() {
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
         <ListItem sx={{ display: 'list-item' }}>
           Git, Github, Subversion
-        </ListItem>
-      </List>
-
-      <Typography fontWeight='bold'>
-        Business Tools
-      </Typography>
-
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
-          Jira, Google Analytics, MS Office
-        </ListItem>
-      </List>
-
-      <Typography fontWeight='bold'>
-        Infrastructure
-      </Typography>
-
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
-          Docker, AWS (ECS, Lambda, RDS, S3)
         </ListItem>
       </List>
 
