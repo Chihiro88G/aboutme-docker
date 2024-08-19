@@ -6,7 +6,7 @@ export default function PageButton({ pageName, path }) {
 
   return (
     <Button
-      // key={pageName}
+      key={pageName}
       sx={{ 
         my: { xs: 0, md: 2},
         color: 'white',

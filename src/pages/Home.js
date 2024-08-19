@@ -3,6 +3,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import Avatar from '@mui/material/Avatar';
 
 import background from "../images/Gradient-Background.png"
 import myImg from "../images/me.png"
@@ -48,15 +49,16 @@ export default function Home() {
           <Button variant='contained' sx={{ marginTop: '60px', marginRight: '10px' }} href="https://www.linkedin.com/in/chihiro-h/" target="_blank" ><LinkedInIcon />CONNECT</Button>
           <Button variant='contained' sx={{ marginTop: '60px' }} color='success' download='ChihiroH_Resume.pdf' href='ChihiroH_Resume.pdf'><PictureAsPdfIcon />RESUME</Button>
         </Box>
-        <Box
-          sx={{
-            width: '350px',
-            borderRadius: '100%',
+
+        <Avatar
+          alt="Remy Sharp"
+          src={myImg}
+          sx={{ 
+            width: 250,
+            height: 250,
             marginTop: '60px'
           }}
-        >
-          <img src={myImg} alt='myimg' style={{ width: '100%', height: 'auto', borderRadius: '8px'}}></img>
-        </Box>
+        />
       </Box>
     </Box>
   )
