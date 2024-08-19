@@ -16,7 +16,7 @@ export default function About() {
       <Box
         sx={{
           display: 'block',
-          height: '100vh',
+          height: '100%',
           margin: '0 auto',
           padding: isDesktop ? '50px' : '40px',
         }} 
