@@ -43,7 +43,7 @@ export default function Home() {
           <LocationOnIcon />Toronto, Canada
         </Typography>
         <Button variant='contained' sx={{ marginTop: '60px', marginRight: '10px' }} href="https://www.linkedin.com/in/chihiro-h/" target="_blank" ><LinkedInIcon />CONNECT</Button>
-        <Button variant='contained' sx={{ marginTop: '60px' }} color='success'><PictureAsPdfIcon />RESUME</Button>
+        <Button variant='contained' sx={{ marginTop: '60px' }} color='success' download='ChihiroH_Resume.pdf' href='ChihiroH_Resume.pdf'><PictureAsPdfIcon />RESUME</Button>
       </Box>
     </Box>
   )
