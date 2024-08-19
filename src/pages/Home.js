@@ -23,7 +23,7 @@ export default function Home() {
       <Box
         sx={{
           display: 'block',
-          height: '100vh',
+          height: isDesktop ? '80vh' : '90vh',
           margin: '0 auto',
           padding: isDesktop ? '50px' : '40px',
         }} 
