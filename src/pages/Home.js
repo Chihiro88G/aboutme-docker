@@ -6,7 +6,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import Avatar from '@mui/material/Avatar';
 
 import background from "../images/Gradient-Background.png"
-import myImg from "../images/me.png"
+import myImg from "../images/me.jpg"
 import Typewriter from '../hooks/useTypewriter';
 
 export default function Home() {
