@@ -34,24 +34,24 @@ export default function About() {
         </Typography>
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
           <ListItem sx={{ display: 'list-item' }}>
-            Enhance 40% of web apps to analyze the performance of frontline workers with the AI-based Voice Analytics solution by
-            coding in JavaScript, React, Typescript, Node.js, and MySQL and performing code reviews with senior developers
+            Developed new interactive pages for a data visualization web app using React, Typescript, Node.js, and MySQL, 
+            integrating AI to analyze real-time recordings of customer service representatives, which increased user experience by 40%
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Achieve 90% of positive customer feedback by architecting and developing a landing page with optimized Rest APIs and an
+            Achieved 90% of positive customer feedback by architecting and developing a landing page with optimized Rest APIs and an
             intuitive dashboard interface
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Streamline 50% of issuing daily performance reports by developing a feature auto-generating reports based on frontline
-            workers' customer engagements and adherence
+            Streamlined 60% of internal workloads by developing a feature auto-generating daily performance reports in Node.js based on customer engagements and adherence
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Optimize 30% of Python application codebase for SMS notifications leveraging Twilio and running on AWS Lambda,
-            ensuring efficiency and maintainability
+            Optimized 30% of Python application codebase for SMS notifications running on AWS Lambda, ensuring efficiency, maintainability, and adherence to coding best practices
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Help resolve 40% of cases where the Voice Analytics solution didn't fully capture Customer Service Agents' customer
-            engagements by investigating data on MySQL and creating visually appealing reports
+            Enhanced team collaboration by 15% through effective code review practices with senior developers in an Agile Scrum team
+          </ListItem>
+          <ListItem sx={{ display: 'list-item' }}>
+            Resolved 40% of AI-based Voice Analytics issues by investigating data on MySQL and used results to create customer facing reports
           </ListItem>
         </List>
 
@@ -73,21 +73,35 @@ export default function About() {
         </Typography>
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
           <ListItem sx={{ display: 'list-item' }}>
-            Enhanced client's emailing efficiency by 20% through the introduction of a novel feature facilitating document attachment to
-            web invoices using Java, Vue, and Oracle DB, with an understanding of Object-Oriented Design          </ListItem>
-          <ListItem sx={{ display: 'list-item' }}>
-            Lessened paper usage by 10% through the implementation of a paperless invoicing system, which enabled invoice issuance
-            without the necessity for data entry
+            Enhanced client's emailing efficiency by 30% through a feature facilitating document attachment to web invoices using Java, Vue, and Oracle DB, with an understanding of Object-Oriented Design          
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Expedited resolution of technical errors within a 24-hour timeframe by monitoring DB/web servers, in-depth research on
-            complex stored procedures run by Task Scheduler, and debugging
+            Implemented a paperless invoicing system, which enabled invoice issuance without the necessity for data entry
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Reduced 10% of workload and 20 emails/week by modifying software to enable the client to register new users
+            Conducted daily monitoring of production DB, web, and SFTP servers and their logs, ensuring timely reporting of issues
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Reduced 10%+ frequency of users accessing a file server by showing the list of products on a products management web app
+            Expedited the resolution of technical errors within a 24-hour timeframe by conducting in-depth research on PL/SQL stored procedures for batch processing and debugging
+          </ListItem>
+          <ListItem sx={{ display: 'list-item' }}>
+            Decreased direct user access to the FTP server by 70% by displaying products on a product management app
+          </ListItem>
+        </List>
+
+
+        <Typography fontWeight='bold'>
+          Apr 2013 - May 2019: QA Engineer @ Taiju Life Insurance
+        </Typography>
+        <List sx={{ listStyleType: 'disc', pl: 4 }}>
+          <ListItem sx={{ display: 'list-item' }}>
+            Executed comprehensive acceptance tests, resulting in zero reported issues from end users          
+          </ListItem>
+          <ListItem sx={{ display: 'list-item' }}>
+            Decreased 4 hours of work a week by identifying areas for modification of the legacy HR system in collaboration with the development team, attending requirements gatherings, and testing
+          </ListItem>
+          <ListItem sx={{ display: 'list-item' }}>
+            Provided technical support for troubleshooting with 70+ branch leaders through phone and emails
           </ListItem>
         </List>
 
