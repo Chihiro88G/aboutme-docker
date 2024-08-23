@@ -82,6 +82,16 @@ export default function Skills() {
         </ListItem>
       </List>
 
+      <Typography fontWeight='bold'>
+        Exposure to Infrastructure
+      </Typography>
+
+      <List sx={{ listStyleType: 'disc', pl: 4 }}>
+        <ListItem sx={{ display: 'list-item' }}>
+          Docker, AWS(S3, RDS, Lambda)
+        </ListItem>
+      </List>
+
     </Box>
   </Box>
   )
