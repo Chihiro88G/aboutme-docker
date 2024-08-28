@@ -1,6 +1,7 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import Title from "../components/Title";
 
 export default function Skills() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -16,18 +17,13 @@ export default function Skills() {
       <Box
         sx={{
           display: 'block',
-          height: '100vh',
+          height: isDesktop ? '80vh' : '100%',
           margin: '0 auto',
           padding: isDesktop ? '50px' : '40px',
         }} 
         maxWidth="lg"
       >
-      <Typography
-        variant={isDesktop ? 'h4' : 'h6'}
-        color='#0d7858'
-      >
-        Skills
-      </Typography>
+      <Title>Skills</Title>
 
       <Typography fontWeight='bold'>
         Programming Languages

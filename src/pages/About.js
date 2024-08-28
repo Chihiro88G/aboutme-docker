@@ -1,6 +1,7 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import Title from "../components/Title";
 
 export default function About() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -22,12 +23,7 @@ export default function About() {
         }} 
         maxWidth="lg"
       >
-        <Typography
-          variant={isDesktop ? 'h4' : 'h6'}
-          color='#0d7858'
-        >
-          Career
-        </Typography>
+        <Title>Career</Title>
 
         <Typography fontWeight='bold'>
           Aug 2023 - Current: Full Stack Software Developer @ Avondx
@@ -105,12 +101,7 @@ export default function About() {
           </ListItem>
         </List>
 
-        <Typography
-          variant={isDesktop ? 'h4' : 'h6'}
-          color='#0d7858'
-        >
-          Education
-        </Typography>
+        <Title>Education</Title>
 
         <Typography fontWeight='bold' marginTop='10px' marginBottom='10px'>
           Jan 2022 - Apr 2023: Software Engineering Technician Diploma @ Centennial College
@@ -119,13 +110,7 @@ export default function About() {
           Apr 2009 - Mar 2013: Bachelor of British and American Literature @ Aoyama Gakuin University
         </Typography>
 
-
-        <Typography
-          variant={isDesktop ? 'h4' : 'h6'}
-          color='#0d7858'
-        >
-          Outside of Work
-        </Typography>
+        <Title>Outside of Work</Title>
 
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
           <ListItem sx={{ display: 'list-item' }}>

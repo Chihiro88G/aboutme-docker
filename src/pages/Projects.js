@@ -1,7 +1,8 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import { Link } from "react-router-dom";
+import ProjectName from "../components/Projects/ProjectName";
+import Title from "../components/Title";
 
 export default function Projects() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -17,34 +18,25 @@ export default function Projects() {
       <Box
         sx={{
           display: 'block',
-          height: '100vh',
+          height: isDesktop ? '80vh' : '100%',
           margin: '0 auto',
           padding: isDesktop ? '50px' : '40px',
         }} 
         maxWidth="lg"
       >
-        <Typography
-          variant={isDesktop ? 'h4' : 'h6'}
-          color='#0d7858'
-        >
-          Projects
-        </Typography>
+        <Title>Projects</Title>
 
-        <Typography fontWeight='bold' variant="h6">
-          <Link to='https://github.com/Chihiro88G/aboutme' target="_blank" >Chihiro.ca</Link>
-        </Typography>
+        <ProjectName repoName='aboutme-docker' projectName='Chihiro.ca' />
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
           <ListItem sx={{ display: 'list-item' }}>
-            This website is part of my personal projects deployed on Github. To be deployed to somewhere else using a Docker container
+            This website is part of my personal projects. Deployed on Render using a Docker container uploaded on Github Container Registry
           </ListItem>
           <ListItem sx={{ display: 'list-item' }}>
-            Technologies: React
+            Technologies: React, Docker
           </ListItem>
         </List>
 
-        <Typography fontWeight='bold' variant="h6">
-          <Link to='https://github.com/Chihiro88G/jp-guides' target="_blank" >GuideMeJp</Link>
-        </Typography>
+        <ProjectName repoName='jp-guides' projectName='GuideMeJp' />
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
           <ListItem sx={{ display: 'list-item' }}>
             GuideMeJp is for tourists planing to visit Japan and looking for tours. It offers travel tips and various guided tours available in English
@@ -54,9 +46,7 @@ export default function Projects() {
           </ListItem>
         </List>
 
-        <Typography fontWeight='bold' variant="h6">
-          <Link to='https://github.com/Chihiro88G/MERN-Cbae' target="_blank" >cBay</Link>
-        </Typography>
+        <ProjectName repoName='MERN-Cbae' projectName='cBay' />
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
           <ListItem sx={{ display: 'list-item' }}>
             E-commerce website (like eBay) to sell and buy a variery of products
