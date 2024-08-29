@@ -8,113 +8,97 @@ import Avatar from '@mui/material/Avatar';
 import background from "../images/Gradient-Background.png"
 import myImg from "../images/me.jpg"
 import Typewriter from '../hooks/useTypewriter';
+import PageContainer from '../components/PageContainer';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
 
   return (
-    <Box
-      sx={{
-        backgroundImage: `url(${background})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
-      }}
-    >
+    <PageContainer bgImage={background}>
       <Box
         sx={{
-          display: 'block',
-          height: isDesktop ? '80vh' : '90vh',
-          margin: '0 auto',
-          padding: isDesktop ? '50px' : '40px',
+          display: isDesktop ? 'flex' : 'block',
+          justifyContent: 'space-evenly',
         }} 
-        maxWidth="lg"
       >
         <Box
           sx={{
-            display: isDesktop ? 'flex' : 'block',
-            justifyContent: 'space-evenly',
-          }} 
+            display: isDesktop ? 'block' : 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            margin: isDesktop ? '' : '0 auto',
+          }}
         >
-          <Box
+          <Typography
+            variant={isDesktop ? 'h3' : 'h4'}
             sx={{
-              display: isDesktop ? 'block' : 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              margin: isDesktop ? '' : '0 auto',
+              marginTop: isDesktop ? '60px' : '',
+              marginBottom: '10px',
             }}
           >
+            Chihiro Hasegawa
+          </Typography>
+
+          <Box>
             <Typography
-              variant={isDesktop ? 'h3' : 'h4'}
-              sx={{
-                marginTop: isDesktop ? '60px' : '',
-                marginBottom: '10px',
-              }}
+              variant={isDesktop ? 'h4' : 'h6'}
             >
-              Chihiro Hasegawa
+              <LaptopMacIcon />Full Stack Developer
             </Typography>
-
-            <Box>
-              <Typography
-                variant={isDesktop ? 'h4' : 'h6'}
-              >
-                <LaptopMacIcon />Full Stack Developer
-              </Typography>
-              <Typography
-                variant={isDesktop ? 'h4' : 'h6'}
-              >
-                <LocationOnIcon />Toronto, Canada
-              </Typography>
-            </Box>
-
-            <Box>
-              <Button 
-                variant='contained'
-                sx={{
-                  marginTop: isDesktop ? '60px' : '20px',
-                  marginRight: '10px'
-                }}
-                href="https://www.linkedin.com/in/chihiro-h/"
-                target="_blank"
-              >
-                <LinkedInIcon />CONNECT
-              </Button>
-              <Button
-                variant='contained'
-                sx={{
-                  marginTop: isDesktop ? '60px' : '20px',
-                }}
-                color='success'
-                download='ChihiroH_Resume.pdf'
-                href='ChihiroH_Resume.pdf'
-              >
-                <PictureAsPdfIcon />RESUME
-              </Button>
-            </Box>
+            <Typography
+              variant={isDesktop ? 'h4' : 'h6'}
+            >
+              <LocationOnIcon />Toronto, Canada
+            </Typography>
           </Box>
 
-          <Avatar
-            alt="Remy Sharp"
-            src={myImg}
-            sx={{ 
-              width: 250,
-              height: 250,
-              marginTop: isDesktop ? '60px' : '',
-              margin: isDesktop ? '' : '20px auto'
-            }}
-          />
+          <Box>
+            <Button 
+              variant='contained'
+              sx={{
+                marginTop: isDesktop ? '60px' : '20px',
+                marginRight: '10px'
+              }}
+              href="https://www.linkedin.com/in/chihiro-h/"
+              target="_blank"
+            >
+              <LinkedInIcon />CONNECT
+            </Button>
+            <Button
+              variant='contained'
+              sx={{
+                marginTop: isDesktop ? '60px' : '20px',
+              }}
+              color='success'
+              download='ChihiroH_Resume.pdf'
+              href='ChihiroH_Resume.pdf'
+            >
+              <PictureAsPdfIcon />RESUME
+            </Button>
+          </Box>
         </Box>
 
-        <Box
-          sx={{
-            display: 'block',
+        <Avatar
+          alt="Remy Sharp"
+          src={myImg}
+          sx={{ 
+            width: 250,
+            height: 250,
             marginTop: isDesktop ? '60px' : '',
             margin: isDesktop ? '' : '20px auto'
-        }}
-        >
-          <Typewriter text= " Let's Connect! " />
-        </Box>
+          }}
+        />
       </Box>
 
-    </Box>
+      <Box
+        sx={{
+          display: 'block',
+          marginTop: isDesktop ? '60px' : '',
+          margin: isDesktop ? '' : '20px auto'
+      }}
+      >
+        <Typewriter text= " Let's Connect! " />
+      </Box>
+    </PageContainer>
   )
 }

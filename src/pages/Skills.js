@@ -1,28 +1,13 @@
-import { Box, Typography, useMediaQuery } from "@mui/material";
+import { Typography } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Title from "../components/Title";
+import PageContainer from "../components/PageContainer";
 
 export default function Skills() {
-  const isDesktop = useMediaQuery('(min-width: 960px)');
 
   return (
-    <Box
-      sx={{
-        backgroundColor: 'whitesmoke',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
-      }}
-    >
-      <Box
-        sx={{
-          display: 'block',
-          height: isDesktop ? '80vh' : '100%',
-          margin: '0 auto',
-          padding: isDesktop ? '50px' : '40px',
-        }} 
-        maxWidth="lg"
-      >
+    <PageContainer bgColor='whitesmoke'>
       <Title>Skills</Title>
 
       <Typography fontWeight='bold'>
@@ -87,8 +72,6 @@ export default function Skills() {
           Docker, AWS(S3, RDS, Lambda)
         </ListItem>
       </List>
-
-    </Box>
-  </Box>
+    </PageContainer>
   )
 }
