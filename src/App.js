@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects'
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function SwitchRoutes() {
         <Route path='/about' element={<About />} />
         <Route path='/skills' element={<Skills />} />
         <Route path='/projects' element={<Projects />} />
+        <Route element={<NotFound />}></Route>
       </Route>
     </Routes>
   );
