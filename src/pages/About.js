@@ -1,8 +1,8 @@
-import { Typography } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Title from "../components/Title";
 import PageContainer from "../components/PageContainer";
+import Bold from "../components/Bold";
 
 export default function About() {
 
@@ -10,9 +10,7 @@ export default function About() {
     <PageContainer bgColor='whitesmoke' isFullHeight={true}>
       <Title>Career</Title>
 
-      <Typography fontWeight='bold'>
-        Aug 2023 - Current: Full Stack Software Developer @ Avondx
-      </Typography>
+      <Bold>Aug 2023 - Current: Full Stack Software Developer @ Avondx</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
         <ListItem sx={{ display: 'list-item' }}>
           Developed new interactive pages for a data visualization web app using React, Typescript, Node.js, and MySQL, 
@@ -36,9 +34,7 @@ export default function About() {
         </ListItem>
       </List>
 
-      <Typography fontWeight='bold'>
-        Mar 2022 - Aug 2023: Technical Consultant / Server @ Nakamori Japanese Restaurant
-      </Typography>
+      <Bold>Mar 2022 - Aug 2023: Technical Consultant / Server @ Nakamori Japanese Restaurant</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
         <ListItem sx={{ display: 'list-item' }}>
           Achieved continuous deliveries of project milestones on time and facilitated effective communication while developing a
@@ -49,9 +45,7 @@ export default function About() {
         </ListItem>
       </List>
 
-      <Typography fontWeight='bold'>
-        Oct 2019 - Feb 2021: Software Engineer @ SPIC
-      </Typography>
+      <Bold>Oct 2019 - Feb 2021: Software Engineer @ SPIC</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
         <ListItem sx={{ display: 'list-item' }}>
           Enhanced client's emailing efficiency by 30% through a feature facilitating document attachment to web invoices using Java, Vue, and Oracle DB, with an understanding of Object-Oriented Design          
@@ -70,10 +64,7 @@ export default function About() {
         </ListItem>
       </List>
 
-
-      <Typography fontWeight='bold'>
-        Apr 2013 - May 2019: QA Engineer @ Taiju Life Insurance
-      </Typography>
+      <Bold>Apr 2013 - May 2019: QA Engineer @ Taiju Life Insurance</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
         <ListItem sx={{ display: 'list-item' }}>
           Executed comprehensive acceptance tests, resulting in zero reported issues from end users          
@@ -87,13 +78,8 @@ export default function About() {
       </List>
 
       <Title>Education</Title>
-
-      <Typography fontWeight='bold' marginTop='10px' marginBottom='10px'>
-        Jan 2022 - Apr 2023: Software Engineering Technician Diploma @ Centennial College
-      </Typography>
-      <Typography fontWeight='bold' marginTop='10px' marginBottom='10px'>
-        Apr 2009 - Mar 2013: Bachelor of British and American Literature @ Aoyama Gakuin University
-      </Typography>
+      <Bold>Jan 2022 - Apr 2023: Software Engineering Technician Diploma @ Centennial College</Bold>          
+      <Bold>Apr 2009 - Mar 2013: Bachelor of British and American Literature @ Aoyama Gakuin University</Bold>
 
       <Title>Outside of Work</Title>
 
