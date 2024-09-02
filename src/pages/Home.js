@@ -8,7 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import background from "../images/Gradient-Background.png"
 import myImg from "../images/me.jpg"
 import Typewriter from '../hooks/useTypewriter';
-import PageContainer from '../components/PageContainer';
+import PageContainer from '../components/Common/PageContainer';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');

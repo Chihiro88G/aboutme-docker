@@ -3,8 +3,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Box } from "@mui/material";
 
-import Logo from "../components/Logo";
-import NavContainer from "../components/NavContainer";
+import Logo from "../components/Common/Logo";
+import NavContainer from "../components/Common/NavContainer";
 
 export default function Footer() {
   return (

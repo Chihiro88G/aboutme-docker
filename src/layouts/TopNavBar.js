@@ -1,8 +1,8 @@
 import Box from '@mui/material/Box';
 
 import { getPages } from '../utils/getPages';
-import Logo from '../components/Logo';
-import NavContainer from '../components/NavContainer';
+import Logo from '../components/Common/Logo';
+import NavContainer from '../components/Common/NavContainer';
 import PageButton from './PageButton';
 
 export default function TopNavBar() {

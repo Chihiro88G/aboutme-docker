@@ -1,8 +1,8 @@
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import Title from "../components/Title";
-import PageContainer from "../components/PageContainer";
-import Bold from "../components/Bold";
+import Title from "../components/Common/Title";
+import PageContainer from "../components/Common/PageContainer";
+import Bold from "../components/Common/Bold";
+import Listitem from '../components/Common/Listitem';
 
 export default function Skills() {
 
@@ -12,47 +12,47 @@ export default function Skills() {
 
       <Bold>Programming Languages</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
+        <Listitem>
           JavaScript, Typescript, Java, Python, C#
-        </ListItem>
+        </Listitem>
       </List>
 
       <Bold>Web Technologies</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
+        <Listitem>
           React, Node, Express, Vue, Spring Boot, HTML, CSS, MUI
-        </ListItem>
+        </Listitem>
       </List>
 
       <Bold>Database</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
+        <Listitem>
           Relational Databases (Oracle RDBMS, MySQL, SQL Server)
-        </ListItem>
-        <ListItem sx={{ display: 'list-item' }}>
-        No SQL (MongoDB)
-        </ListItem>
+        </Listitem>
+        <Listitem>
+          No SQL (MongoDB)
+        </Listitem>
       </List>
 
       <Bold>Version Control</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
+        <Listitem>
           Git, Github, Subversion
-        </ListItem>
+        </Listitem>
       </List>
 
       <Bold>IT Operations</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
+        <Listitem>
           Waterfall and Agile practices
-        </ListItem>
+        </Listitem>
       </List>
 
       <Bold>Exposure to Infrastructure</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <ListItem sx={{ display: 'list-item' }}>
+        <Listitem>
           Docker, AWS(S3, RDS, Lambda)
-        </ListItem>
+        </Listitem>
       </List>
     </PageContainer>
   )

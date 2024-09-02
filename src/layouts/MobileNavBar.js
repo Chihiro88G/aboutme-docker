@@ -8,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 // import Logo from '../components/Logo';
 import { getPages } from '../utils/getPages';
-import NavContainer from '../components/NavContainer';
+import NavContainer from '../components/Common/NavContainer';
 import PageButton from './PageButton';
 
 export default function MobileNavBar() {
