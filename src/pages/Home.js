@@ -1,14 +1,15 @@
-import { Box, Button, Typography, useMediaQuery } from '@mui/material';
+import { Box, Button, useMediaQuery } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import Avatar from '@mui/material/Avatar';
 
 import background from "../images/Gradient-Background.png"
-import myImg from "../images/me.jpg"
 import Typewriter from '../hooks/useTypewriter';
 import PageContainer from '../components/Common/PageContainer';
+import MyName from '../components/Home/MyName';
+import MyInfo from '../components/Home/MyInfo';
+import MyPic from '../components/Home/MyPic';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -29,27 +30,14 @@ export default function Home() {
             margin: isDesktop ? '' : '0 auto',
           }}
         >
-          <Typography
-            variant={isDesktop ? 'h3' : 'h4'}
-            sx={{
-              marginTop: isDesktop ? '60px' : '',
-              marginBottom: '10px',
-            }}
-          >
-            Chihiro Hasegawa
-          </Typography>
-
+          <MyName>Chihiro Hasegawa</MyName>
           <Box>
-            <Typography
-              variant={isDesktop ? 'h4' : 'h6'}
-            >
+            <MyInfo>
               <LaptopMacIcon />Full Stack Developer
-            </Typography>
-            <Typography
-              variant={isDesktop ? 'h4' : 'h6'}
-            >
+            </MyInfo>              
+            <MyInfo>
               <LocationOnIcon />Toronto, Canada
-            </Typography>
+            </MyInfo>
           </Box>
 
           <Box>
@@ -78,16 +66,7 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Avatar
-          alt="Remy Sharp"
-          src={myImg}
-          sx={{ 
-            width: 250,
-            height: 250,
-            marginTop: isDesktop ? '60px' : '',
-            margin: isDesktop ? '' : '20px auto'
-          }}
-        />
+        <MyPic />
       </Box>
 
       <Box
