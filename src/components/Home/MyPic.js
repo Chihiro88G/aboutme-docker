@@ -11,8 +11,8 @@ export default function MyPic() {
       sx={{ 
         width: 250,
         height: 250,
-        marginTop: isDesktop ? '60px' : '',
-        margin: isDesktop ? '' : '20px auto'
+        mt: isDesktop ? '60px' : '',
+        m: isDesktop ? '' : '20px auto'
       }}
     />
   );

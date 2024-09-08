@@ -5,7 +5,7 @@ const NotFound = () => (
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
-    marginTop: '30px'
+    mt: '30px'
   }}>
     <Typography variant='h3'>Oops!</Typography>
     <Typography variant='h6'>

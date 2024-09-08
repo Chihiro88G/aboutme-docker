@@ -7,7 +7,7 @@ export default function MyName({ children }) {
     <Typography
       variant={isDesktop ? 'h3' : 'h4'}
       sx={{
-        marginTop: isDesktop ? '60px' : '',
+        mt: isDesktop ? '60px' : '',
         marginBottom: '10px',
       }}
     >

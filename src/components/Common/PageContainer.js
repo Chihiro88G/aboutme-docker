@@ -16,8 +16,8 @@ export default function PageContainer({ children, bgImage, bgColor, isFullHeight
         sx={{
           display: 'block',
           height: isFullHeight ? '100%' : (isDesktop ? '80vh' : '100%'),
-          margin: '0 auto',
-          padding: isDesktop ? '50px' : '40px',
+          m: '0 auto',
+          p: isDesktop ? '50px' : '40px',
         }} 
         maxWidth="lg"
       >

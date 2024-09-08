@@ -8,7 +8,7 @@ export default function LinkedInBtn() {
     <Button 
       variant='contained'
       sx={{
-        marginTop: isDesktop ? '60px' : '20px',
+        mt: isDesktop ? '60px' : '20px',
         marginRight: '10px'
       }}
       href="https://www.linkedin.com/in/chihiro-h/"

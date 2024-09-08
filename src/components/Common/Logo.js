@@ -6,7 +6,7 @@ export default function Logo() {
 
   return (
     <Fragment>
-      <FaceRetouchingNaturalIcon sx={{ margin: '3px' }}/>
+      <FaceRetouchingNaturalIcon sx={{ m: '3px' }}/>
       <Typography
         variant="h6"
         noWrap

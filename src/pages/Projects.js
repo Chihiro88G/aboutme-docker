@@ -40,7 +40,7 @@ export default function Projects() {
         </Listitem>
       </List>
 
-      <Typography sx={{ marginTop: '20px' }}>
+      <Typography sx={{ mt: '20px' }}>
         To be added...
       </Typography>
     </PageContainer>

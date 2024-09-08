@@ -7,7 +7,7 @@ export default function Listitem({ children }) {
     <ListItem 
       sx={{ 
         display: 'list-item',
-        padding: isDesktop ? '' : 0,
+        p: isDesktop ? '' : 0,
       }}
     >
       {children}

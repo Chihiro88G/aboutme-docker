@@ -8,7 +8,7 @@ export default function ResumeBtn() {
     <Button
       variant='contained'
       sx={{
-        marginTop: isDesktop ? '60px' : '20px',
+        mt: isDesktop ? '60px' : '20px',
       }}
       color='success'
       download='ChihiroH_Resume.pdf'

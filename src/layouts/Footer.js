@@ -11,8 +11,8 @@ export default function Footer() {
     <NavContainer component='footer'>
       <Box
         sx={{
-          margin: "0 auto",
-          padding: "30px 0",
+          m: "0 auto",
+          p: "30px 0",
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',

@@ -27,7 +27,7 @@ export default function Home() {
             display: isDesktop ? 'block' : 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            margin: isDesktop ? '' : '0 auto',
+            m: isDesktop ? '' : '0 auto',
           }}
         >
           <MyName>Chihiro Hasegawa</MyName>
@@ -52,8 +52,8 @@ export default function Home() {
       <Box
         sx={{
           display: 'block',
-          marginTop: isDesktop ? '60px' : '',
-          margin: isDesktop ? '' : '20px auto'
+          mt: isDesktop ? '60px' : '',
+          m: isDesktop ? '' : '20px auto'
       }}
       >
         <Typewriter text= " Let's Connect! " />
