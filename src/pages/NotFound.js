@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-const NotFound = () => (
+export default function NotFound() {
   <Box sx={{  
     display: 'flex',
     alignItems: 'center',
@@ -12,5 +12,4 @@ const NotFound = () => (
       Couldn't find the requested page: 404
     </Typography>
   </Box>
-);
-export default NotFound;
+};

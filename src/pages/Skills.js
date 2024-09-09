@@ -4,6 +4,7 @@ import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
 import Listitem from '../components/Common/Listitem';
 import background from "../images/skills-bg.png"
+import { JsIcon, JavaIcon, PythonIcon, TsIcon, SpringIcon, SqlServerIcon } from '../components/Icons/Icons';
 
 export default function Skills() {
 
@@ -17,6 +18,13 @@ export default function Skills() {
           JavaScript, Typescript, Java, Python, C#
         </Listitem>
       </List>
+
+      {/* <JsIcon />
+      <TsIcon />
+      <JavaIcon />
+      <PythonIcon /> */}
+      {/* <SpringIcon /> */}
+      {/* <SqlServerIcon /> */}
 
       <Bold>Web Technologies</Bold>
       <List sx={{ listStyleType: 'disc', pl: 4 }}>
