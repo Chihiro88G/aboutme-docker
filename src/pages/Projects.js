@@ -1,47 +1,57 @@
-import { Typography, List } from "@mui/material";
-import ProjectName from "../components/Projects/ProjectName";
+import { Typography, Grid, useMediaQuery } from "@mui/material";
 import Title from "../components/Common/Title";
 import PageContainer from "../components/Common/PageContainer";
-import Listitem from "../components/Common/Listitem";
+import ProjectCard from "../components/Projects/ProjectCard";
+import guideMeImg from "../images/guideme-jp.png";
+import chihiroCaImg from "../images/chihiro-ca.png";
+import cbayImg from "../images/cbay.png";
 
 export default function Projects() {
+  const isDesktop = useMediaQuery('(min-width: 960px)');
+  const gitUri = 'https://github.com/Chihiro88G/';
 
   return (
-    <PageContainer bgColor='whitesmoke'>
+    <PageContainer bgColor='whitesmoke' isFullHeight={true}>
       <Title>Projects</Title>
 
-      <ProjectName repoName='aboutme-docker' projectName='Chihiro.ca' />
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          This website is part of my personal projects. Deployed on Render using a Docker container uploaded on Github Container Registry
-        </Listitem>
-        <Listitem>
-          Technologies: React, Docker
-        </Listitem>
-      </List>
+      <Grid 
+        container
+        spacing={2}
+        justifyContent="center"
+        sx={{
+          width: isDesktop ? '60%' : '100%',
+          margin: '0 auto'
+        }}
+      >
+        <Grid item xs={12} md={6}>
+          <ProjectCard 
+            name='GuideMeJp'
+            overview='GuideMeJp is for tourists planing to visit Japan and looking for tours. It offers travel tips and various guided tours available in English'
+            link={gitUri + 'jp-guides'}
+            imgUrl={guideMeImg}
+          />
+        </Grid>
 
-      <ProjectName repoName='jp-guides' projectName='GuideMeJp' />
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          GuideMeJp is for tourists planing to visit Japan and looking for tours. It offers travel tips and various guided tours available in English
-        </Listitem>
-        <Listitem>
-          Technologies: Typescript, React, Redux, Node.js, Express, MySQL
-        </Listitem>
-      </List>
+        <Grid item xs={12} md={6}>
+          <ProjectCard 
+            name='Chihiro.ca'
+            overview='This website is part of my personal projects. Deployed on Render using a Docker container uploaded on Github Container Registry'
+            link={gitUri + 'aboutme-docker'}
+            imgUrl={chihiroCaImg}
+          />
+        </Grid>
 
-      <ProjectName repoName='MERN-Cbae' projectName='cBay' />
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          E-commerce website (like eBay) to sell and buy a variery of products
-        </Listitem>
-        <Listitem>
-          Technologies: React, Redux, Node.js, Express, MongoDB
-        </Listitem>
-      </List>
-
-      <Typography sx={{ mt: '20px' }}>
-        To be added...
+        <Grid item xs={12} md={6}>
+          <ProjectCard 
+            name='cBay'
+            overview='E-commerce website (like eBay) to sell and buy a variery of products'
+            link={gitUri + 'MERN-Cbae'}
+            imgUrl={cbayImg}
+          />
+        </Grid>
+      </Grid>
+      <Typography sx={{ mt: '20px', textAlign: 'center' }}>
+        More Projects to be added...👍
       </Typography>
     </PageContainer>
   )
