@@ -9,7 +9,7 @@ export default function PageContainer({ children, bgImage, bgColor, isFullHeight
         backgroundImage: bgImage ? `url(${bgImage})` : '',
         backgroundColor: bgColor ? bgColor : '',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
       }}
     >
       <Box

@@ -3,11 +3,12 @@ import Title from "../components/Common/Title";
 import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
 import Listitem from "../components/Common/Listitem";
+import background from "../images/about-bg.jpg"
 
 export default function About() {
 
   return (
-    <PageContainer bgColor='whitesmoke' isFullHeight={true}>
+    <PageContainer bgImage={background} isFullHeight={true}>
       <Title>Career</Title>
 
       <Bold>Aug 2023 - Current: Full Stack Software Developer @ Avondx</Bold>

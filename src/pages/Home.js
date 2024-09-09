@@ -2,7 +2,7 @@ import { Box, useMediaQuery } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 
-import background from "../images/Gradient-Background.png"
+import background from '../images/home-bg.png';
 import Typewriter from '../hooks/useTypewriter';
 import PageContainer from '../components/Common/PageContainer';
 import MyName from '../components/Home/MyName';

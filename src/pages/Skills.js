@@ -3,11 +3,12 @@ import Title from "../components/Common/Title";
 import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
 import Listitem from '../components/Common/Listitem';
+import background from "../images/skills-bg.png"
 
 export default function Skills() {
 
   return (
-    <PageContainer bgColor='whitesmoke'>
+    <PageContainer bgImage={background}>
       <Title>Skills</Title>
 
       <Bold>Programming Languages</Bold>

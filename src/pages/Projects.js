@@ -5,13 +5,14 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import guideMeImg from "../images/guideme-jp.png";
 import chihiroCaImg from "../images/chihiro-ca.png";
 import cbayImg from "../images/cbay.png";
+import background from "../images/projects-bg.jpg"
 
 export default function Projects() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
   const gitUri = 'https://github.com/Chihiro88G/';
-
+  
   return (
-    <PageContainer bgColor='whitesmoke' isFullHeight={true}>
+    <PageContainer bgImage={background} isFullHeight={true}>
       <Title>Projects</Title>
 
       <Grid 
