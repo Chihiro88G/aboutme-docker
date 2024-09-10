@@ -1,68 +1,110 @@
-import List from '@mui/material/List';
+import { Grid, Box, Typography } from '@mui/material';
 import Title from "../components/Common/Title";
 import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
-import Listitem from '../components/Common/Listitem';
 import background from "../images/skills-bg.png"
-import { JsIcon, JavaIcon, PythonIcon, TsIcon, SpringIcon, SqlServerIcon } from '../components/Icons/Icons';
+import { JsIcon, JavaIcon, PythonIcon, TsIcon, SpringIcon, SqlServerIcon, ReactIcon, NodejsIcon, ExpressIcon, MuiIcon, HtmlIcon, CssIcon, MySqlIcon, OracleIcon, GitIcon, GitHubIcon, SvnIcon } from '../components/Icons/Icons';
 
 export default function Skills() {
 
   return (
-    <PageContainer bgImage={background}>
+    <PageContainer bgImage={background} isFullHeight={true}>
       <Title>Skills</Title>
 
-      <Bold>Programming Languages</Bold>
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          JavaScript, Typescript, Java, Python, C#
-        </Listitem>
-      </List>
+      <Box width='80%' m='auto'>
+        <Bold>Programming Languages</Bold>
+        <Grid 
+          container
+          spacing={2}
+          justifyContent="center"
+          mb='70px'
+        >
+          <Grid item xs={6} md={3}>
+            <JsIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <TsIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <JavaIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <PythonIcon />
+          </Grid>
+        </Grid>
 
-      {/* <JsIcon />
-      <TsIcon />
-      <JavaIcon />
-      <PythonIcon /> */}
-      {/* <SpringIcon /> */}
-      {/* <SqlServerIcon /> */}
+        <Bold>Web Technologies</Bold>
+        <Grid 
+          container
+          spacing={2}
+          justifyContent="center"
+          mb='70px'
+        >
+          <Grid item xs={6} md={3}>
+            <ReactIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <NodejsIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <ExpressIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <SpringIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <MuiIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <HtmlIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <CssIcon />
+          </Grid>
+        </Grid>
 
-      <Bold>Web Technologies</Bold>
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          React, Node, Express, Vue, Spring Boot, HTML, CSS, MUI
-        </Listitem>
-      </List>
 
-      <Bold>Database</Bold>
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          Relational Databases (Oracle RDBMS, MySQL, SQL Server)
-        </Listitem>
-        <Listitem>
-          No SQL (MongoDB)
-        </Listitem>
-      </List>
+        <Bold>Database</Bold>
+        <Grid 
+          container
+          spacing={2}
+          justifyContent="center"
+          mb='70px'
+        >
+          <Grid item xs={6} md={3}>
+            <MySqlIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <OracleIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <SqlServerIcon />
+          </Grid>
+        </Grid>
 
-      <Bold>Version Control</Bold>
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          Git, Github, Subversion
-        </Listitem>
-      </List>
+        <Bold>Version Control</Bold>
+        <Grid 
+          container
+          spacing={2}
+          justifyContent="center"
+          mb='70px'
+        >
+          <Grid item xs={6} md={3}>
+            <GitIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <GitHubIcon />
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <SvnIcon />
+          </Grid>
+        </Grid>
 
-      <Bold>IT Operations</Bold>
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          Waterfall and Agile practices
-        </Listitem>
-      </List>
-
-      <Bold>Exposure to Infrastructure</Bold>
-      <List sx={{ listStyleType: 'disc', pl: 4 }}>
-        <Listitem>
-          Docker, AWS(S3, RDS, Lambda)
-        </Listitem>
-      </List>
+        <Bold>Exposure to Infrastructure</Bold>
+        <Typography textAlign='center'>
+            Docker, AWS(S3, RDS, Lambda)
+        </Typography>
+      </Box>
     </PageContainer>
   )
 }

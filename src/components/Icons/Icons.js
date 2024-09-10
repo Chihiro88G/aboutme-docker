@@ -134,7 +134,7 @@ export function MuiIcon() {
         <path fill="#1FA6CA" d="M48 77.8v18.4l32 18.4V96.2L48 77.8z"></path>
         <path fill="#1C7FB6" d="M80 114.6L127.8 87V50.2l-16 9.2v18.4L80 96.2v18.4zM111.9 41V22.6l16-9.2v18.4l-16 9.2z"></path>
       </svg>
-      <SkillName>Material UI</SkillName>
+      <SkillName>MUI</SkillName>
     </IconContainer>
   );
 }
@@ -307,7 +307,14 @@ export function DockerIcon() {
 
 function IconContainer({ children }) {
   return (
-    <Box display='flex' flexDirection='column' alignItems='center' width='80px'>
+    <Box 
+      display='flex' 
+      flexDirection='column' 
+      justifyContent='center'
+      alignItems='center'
+      width='80px'
+      m='0 auto'
+    >
       {children}
     </Box>
   );
@@ -315,6 +322,12 @@ function IconContainer({ children }) {
 
 function SkillName({ children }) {
   return (
-    <Typography fontFamily='monospace' variant='small'>{children}</Typography>
+    <Typography
+      fontFamily='monospace' 
+      variant='small'
+      m='0 auto'
+    >
+      {children}
+    </Typography>
   );
 }

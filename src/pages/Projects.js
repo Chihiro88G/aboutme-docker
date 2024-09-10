@@ -19,6 +19,7 @@ export default function Projects() {
         container
         spacing={2}
         justifyContent="center"
+        alignSelf='center'
         sx={{
           width: isDesktop ? '60%' : '100%',
           margin: '0 auto'
