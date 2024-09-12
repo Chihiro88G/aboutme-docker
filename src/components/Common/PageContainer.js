@@ -1,13 +1,12 @@
 import { Box, useMediaQuery } from '@mui/material';
 
-export default function PageContainer({ children, bgImage, bgColor, isFullHeight }) {
+export default function PageContainer({ children, bgImage, isFullHeight }) {
   const isDesktop = useMediaQuery('(min-width: 960px)');
 
   return (
     <Box
       sx={{
-        backgroundImage: bgImage ? `url(${bgImage})` : '',
-        backgroundColor: bgColor ? bgColor : '',
+        backgroundImage: `url(${bgImage})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       }}

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Typography, Grid, useMediaQuery } from "@mui/material";
 import Title from "../components/Common/Title";
 import PageContainer from "../components/Common/PageContainer";
@@ -5,11 +6,21 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import guideMeImg from "../images/guideme-jp.png";
 import chihiroCaImg from "../images/chihiro-ca.png";
 import cbayImg from "../images/cbay.png";
-import background from "../images/projects-bg.jpg"
+import background from "../images/projects-bg.jpg";
+import Loading from '../components/Loading';
 
 export default function Projects() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
   const gitUri = 'https://github.com/Chihiro88G/';
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = background;
+    img.onload = () => setIsLoading(false);
+  }, []);
+
+  if (isLoading) return <Loading/>
   
   return (
     <PageContainer bgImage={background} isFullHeight={true}>

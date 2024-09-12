@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Box, useMediaQuery } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
@@ -10,9 +11,19 @@ import MyInfo from '../components/Home/MyInfo';
 import MyPic from '../components/Home/MyPic';
 import LinkedInBtn from '../components/Home/LinkedInBtn';
 import ResumeBtn from '../components/Home/ResumeBtn';
+import Loading from '../components/Loading';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = background;
+    img.onload = () => setIsLoading(false);
+  }, []);
+
+  if (isLoading) return <Loading/>
 
   return (
     <PageContainer bgImage={background}>

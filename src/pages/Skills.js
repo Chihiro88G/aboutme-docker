@@ -1,11 +1,22 @@
+import { useState, useEffect } from 'react';
 import { Grid, Box, Typography } from '@mui/material';
 import Title from "../components/Common/Title";
 import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
 import background from "../images/skills-bg.png"
 import { JsIcon, JavaIcon, PythonIcon, TsIcon, SpringIcon, SqlServerIcon, ReactIcon, NodejsIcon, ExpressIcon, MuiIcon, HtmlIcon, CssIcon, MySqlIcon, OracleIcon, GitIcon, GitHubIcon, SvnIcon } from '../components/Icons/Icons';
+import Loading from '../components/Loading';
 
 export default function Skills() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = background;
+    img.onload = () => setIsLoading(false);
+  }, []);
+
+  if (isLoading) return <Loading/>
 
   return (
     <PageContainer bgImage={background} isFullHeight={true}>

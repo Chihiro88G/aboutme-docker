@@ -1,11 +1,22 @@
+import { useState, useEffect } from 'react';
 import List from '@mui/material/List';
 import Title from "../components/Common/Title";
 import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
 import Listitem from "../components/Common/Listitem";
 import background from "../images/about-bg.jpg"
+import Loading from '../components/Loading';
 
 export default function About() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = background;
+    img.onload = () => setIsLoading(false);
+  }, []);
+
+  if (isLoading) return <Loading/>
 
   return (
     <PageContainer bgImage={background} isFullHeight={true}>
