@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import { Box, useMediaQuery } from '@mui/material';
+import { Box, useMediaQuery, Avatar } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 
 import background from '../images/home-bg.png';
+import myImg from "../images/me.jpg";
 import Typewriter from '../hooks/useTypewriter';
 import PageContainer from '../components/Common/PageContainer';
 import MyName from '../components/Home/MyName';
 import MyInfo from '../components/Home/MyInfo';
-import MyPic from '../components/Home/MyPic';
 import LinkedInBtn from '../components/Home/LinkedInBtn';
 import ResumeBtn from '../components/Home/ResumeBtn';
 import Loading from '../components/Loading';
@@ -18,9 +18,20 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const img = new Image();
-    img.src = background;
-    img.onload = () => setIsLoading(false);
+    const imageUrls = [background, myImg];
+
+    const loadImage = (url) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    };
+  
+    Promise.all(imageUrls.map(loadImage))
+      .then(() => setIsLoading(false))
+      .catch(() => setIsLoading(false));
   }, []);
 
   if (isLoading) return <Loading/>
@@ -57,7 +68,16 @@ export default function Home() {
           </Box>
         </Box>
 
-        <MyPic />
+        <Avatar
+          alt="Remy Sharp"
+          src={myImg}
+          sx={{ 
+            width: 250,
+            height: 250,
+            mt: isDesktop ? '60px' : '',
+            m: isDesktop ? '' : '20px auto'
+          }}
+        />
       </Box>
 
       <Box
