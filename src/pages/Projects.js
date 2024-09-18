@@ -28,15 +28,16 @@ export default function Projects() {
 
       <Grid 
         container
-        spacing={2}
         justifyContent="center"
         alignSelf='center'
+        spacing={2}
         sx={{
           width: isDesktop ? '60%' : '100%',
-          margin: '0 auto'
+          margin: '0 auto',
+          paddingRight: !isDesktop && '23px',
         }}
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sx={{ padding: 0 }}>
           <ProjectCard 
             name='GuideMeJp'
             overview='GuideMeJp is for tourists planing to visit Japan and looking for tours. It offers travel tips and various guided tours available in English'
