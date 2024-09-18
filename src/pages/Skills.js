@@ -5,7 +5,7 @@ import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
 import background from "../images/skills-bg.png"
 import { JsIcon, JavaIcon, PythonIcon, TsIcon, SpringIcon, SqlServerIcon, ReactIcon, NodejsIcon, ExpressIcon, MuiIcon, HtmlIcon, CssIcon, MySqlIcon, OracleIcon, GitIcon, GitHubIcon, SvnIcon } from '../components/Icons/Icons';
-import Loading from '../components/Loading';
+import Loading from '../spinner/Loading';
 
 export default function Skills() {
   const [isLoading, setIsLoading] = useState(true);

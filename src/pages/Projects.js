@@ -7,7 +7,7 @@ import guideMeImg from "../images/guideme-jp.png";
 import chihiroCaImg from "../images/chihiro-ca.png";
 import cbayImg from "../images/cbay.png";
 import background from "../images/projects-bg.jpg";
-import Loading from '../components/Loading';
+import Loading from '../spinner/Loading';
 
 export default function Projects() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -20,7 +20,7 @@ export default function Projects() {
     img.onload = () => setIsLoading(false);
   }, []);
 
-  if (isLoading) return <Loading/>
+  if (isLoading) return <Loading />
   
   return (
     <PageContainer bgImage={background} isFullHeight={true}>

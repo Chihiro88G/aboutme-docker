@@ -11,7 +11,7 @@ import MyName from '../components/Home/MyName';
 import MyInfo from '../components/Home/MyInfo';
 import LinkedInBtn from '../components/Home/LinkedInBtn';
 import ResumeBtn from '../components/Home/ResumeBtn';
-import Loading from '../components/Loading';
+import Loading from '../spinner/Loading';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');

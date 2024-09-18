@@ -5,7 +5,7 @@ import PageContainer from "../components/Common/PageContainer";
 import Bold from "../components/Common/Bold";
 import Listitem from "../components/Common/Listitem";
 import background from "../images/about-bg.jpg"
-import Loading from '../components/Loading';
+import Loading from '../spinner/Loading';
 
 export default function About() {
   const [isLoading, setIsLoading] = useState(true);

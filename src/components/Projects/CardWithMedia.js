@@ -1,7 +1,15 @@
+import { useState, useEffect } from 'react';
 import { Card, CardMedia } from '@mui/material';
 
-
 export default function CardWithMedia({ children, imgUrl }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = imgUrl;
+    img.onload = () => setIsLoading(false);
+  }, [imgUrl]);
+
   return (
     <Card
       sx={{
@@ -23,6 +31,7 @@ export default function CardWithMedia({ children, imgUrl }) {
         }}
         image={imgUrl}
         title="default image"
+        isLoading={isLoading}
       />
       {children}
     </Card>
