@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
 import  { useState, useEffect } from 'react';
+import { Typography, Box, useMediaQuery } from '@mui/material';
 
 const useTypewriter = (text, speed = 80) => {
   const [displayText, setDisplayText] = useState('');
@@ -27,13 +27,23 @@ const useTypewriter = (text, speed = 80) => {
 };
 
 
-
 const Typewriter = ({ text, speed }) => {
+  const isDesktop = useMediaQuery('(min-width: 960px)');
   const displayText = useTypewriter(text, speed);
 
-  return <Typography variant='h4' textAlign='center' color='#3f3e40'>
-          {displayText}
-         </Typography>;
+  return(
+    <Box
+      sx={{
+        display: 'block',
+        mt: isDesktop ? '60px' : '',
+        m: isDesktop ? '' : '20px auto'
+    }}
+    >
+      <Typography variant='h4' textAlign='center' color='#3f3e40'>
+        {displayText}
+      </Typography>
+    </Box>
+  );
 };
 
 export default Typewriter;

@@ -12,6 +12,7 @@ import MyInfo from '../components/Home/MyInfo';
 import LinkedInBtn from '../components/Home/LinkedInBtn';
 import ResumeBtn from '../components/Home/ResumeBtn';
 import Loading from '../spinner/Loading';
+import ProfileContainer from '../components/Home/ProfileContainer';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -38,12 +39,7 @@ export default function Home() {
 
   return (
     <PageContainer bgImage={background}>
-      <Box
-        sx={{
-          display: isDesktop ? 'flex' : 'block',
-          justifyContent: 'space-evenly',
-        }} 
-      >
+      <ProfileContainer>
         <Box
           sx={{
             display: isDesktop ? 'block' : 'flex',
@@ -78,17 +74,9 @@ export default function Home() {
             m: isDesktop ? '' : '20px auto'
           }}
         />
-      </Box>
+      </ProfileContainer>
 
-      <Box
-        sx={{
-          display: 'block',
-          mt: isDesktop ? '60px' : '',
-          m: isDesktop ? '' : '20px auto'
-      }}
-      >
-        <Typewriter text= " Let's Connect! " />
-      </Box>
+      <Typewriter text= " Let's Connect! " />
     </PageContainer>
   )
 }
