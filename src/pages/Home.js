@@ -13,6 +13,7 @@ import LinkedInBtn from '../components/Home/LinkedInBtn';
 import ResumeBtn from '../components/Home/ResumeBtn';
 import Loading from '../spinner/Loading';
 import ProfileContainer from '../components/Home/ProfileContainer';
+import CertificationBadges from '../components/Home/CertificationBadges';
 
 export default function Home() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -76,7 +77,10 @@ export default function Home() {
         />
       </ProfileContainer>
 
-      <Typewriter text= " Let's Connect! " />
+      <Typewriter text= " Let's Connect!" />
+
+      <CertificationBadges />
+
     </PageContainer>
   )
 }
