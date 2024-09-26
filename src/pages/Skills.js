@@ -19,7 +19,7 @@ export default function Skills() {
   if (isLoading) return <Loading/>
 
   return (
-    <PageContainer bgImage={background} isFullHeight={true}>
+    <PageContainer bgImage={background}>
       <Title>Skills</Title>
 
       <Box width='80%' m='auto'>

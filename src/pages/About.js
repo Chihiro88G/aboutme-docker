@@ -19,7 +19,7 @@ export default function About() {
   if (isLoading) return <Loading/>
 
   return (
-    <PageContainer bgImage={background} isFullHeight={true}>
+    <PageContainer bgImage={background}>
       <Title>Career</Title>
 
       <Bold>Aug 2023 - Current: Full Stack Software Developer @ Avondx</Bold>

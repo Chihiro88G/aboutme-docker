@@ -1,6 +1,6 @@
 import { Box, useMediaQuery } from '@mui/material';
 
-export default function PageContainer({ children, bgImage, isFullHeight }) {
+export default function PageContainer({ children, bgImage }) {
   const isDesktop = useMediaQuery('(min-width: 960px)');
 
   return (
@@ -14,7 +14,8 @@ export default function PageContainer({ children, bgImage, isFullHeight }) {
       <Box
         sx={{
           display: 'block',
-          height: isFullHeight ? '100%' : (isDesktop ? '80vh' : '100%'),
+          height: '100%',
+          minHeight: '100vh',
           m: '0 auto',
           p: isDesktop ? '50px' : '40px',
         }} 

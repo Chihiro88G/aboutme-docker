@@ -23,7 +23,7 @@ export default function Projects() {
   if (isLoading) return <Loading />
   
   return (
-    <PageContainer bgImage={background} isFullHeight={true}>
+    <PageContainer bgImage={background}>
       <Title>Projects</Title>
 
       <Grid 
