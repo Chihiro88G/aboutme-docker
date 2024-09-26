@@ -29,8 +29,8 @@ export default function CertificationBadges() {
   return (
     <Box
       sx={{
-        display: isDesktop ? 'flex' : 'block',
-        justifyContent: 'space-evenly',
+        display: 'flex',
+        justifyContent: isDesktop ? 'space-evenly' : 'center',
         mt: '30px',
       }} 
     >
