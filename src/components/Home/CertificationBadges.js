@@ -10,7 +10,7 @@ export default function CertificationBadges() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowBadge(true);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
