@@ -113,7 +113,7 @@ export default function Skills() {
 
         <Bold>Exposure to Infrastructure</Bold>
         <Typography textAlign='center'>
-            Docker, AWS(S3, RDS, Lambda)
+            Docker, AWS(S3, RDS, Lambda, ECS)
         </Typography>
       </Box>
     </PageContainer>
